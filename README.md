@@ -1,0 +1,2 @@
+# casioClone
+clone of casio 
