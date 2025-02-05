@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="landingPage.css">
+</head>
+
+<body>
+    <!-- Basic Nav Bar -->
+    <div class="basicNavbarDiv">
+        <div class="basicNavbarDiv-left">
+        </div>
+        <div class="basicNavbarDiv-right">
+            <ul class="basicNavbarDiv-right-ul">
+                <li><a href="">Support</a></li>
+                <li><a href="">Corporate</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- main Navbar -->
+    <div class="mainNavbarDiv">
+        <ul class="mainNavbarDiv-ul">
+            <li>
+                <div class="mainNavbarDiv-logo-div">
+                    <img src="./resources/images/Casio_logo.svg" width="100px" height="20px" alt="casio logo">
+                </div>
+            </li>
+            <li>
+                <div class="mainNavbarDiv-middle-div">
+                    <ul class="mainNavbarDiv-middle-ul">
+                        <li><a href="">Watches</a></li>
+                        <li><a href="">Electronic Musical Instruments</a></li>
+                        <li><a href="">Calculators</a></li>
+                        <li><a href="">Label Printers &amp; Tapes</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="mainNavbarDiv-right-button-div">
+                    <ul class="mainNavbarDiv-right-button-ul">
+                        <li class="search-container">
+                            <div class="search-wrapper">
+                                <button class="close-search hidden">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                                <input type="text" placeholder="Search..." id="search-input">
+                                <button class="search-btn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="favorite-button">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="menu-toggle">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Side menu -->
+    <div class="sideMenuDiv">
+        <!-- Close button -->
+        <button class="close-menu">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- Watches menu -->
+        <div class="menu-item">
+            <div class="menu-header">
+                <span>Watches</span>
+                <button class="collapse-btn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+        </div>
+        <ul class="submenu">
+            <li><a href="#"><i class="fa-solid fa-chevron-left"></i><span>G-SHOCK</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-left"></i><span>CASIO VINTAGE</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-left"></i><span>CASIO EDIFICE</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-left"></i><span>CASIO COLLECTION</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-left"></i><span>SHEEN</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-left"></i><span>BABY-G</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-left"></i><span>PROTREK</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-left"></i><span>CLOCKS</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-left"></i><span>OTHERS</span></a></li>
+            <li><a href="#">All Watches</a></li>
+        </ul>
+
+        <!-- Electronic Musical Instruments menu -->
+        <div class="menu-item">
+            <div class="menu-header">
+                <span>Electronic Musical Instruments</span>
+                <button class="collapse-btn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+        </div>
+        <ul class="submenu">
+            <li><a href="#"><i class="fa-solid fa-chevron-left"></i><span>Shop By Skill</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-left"></i><span>Keyboard &amp; Pianos</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-left"></i><span>Others</span></a></li>
+            <li><a href="#">All Electronic Musical Instruments</a></li>
+        </ul>
+
+        <!-- Calculator menu -->
+        <div class="menu-item">
+            <div class="menu-header">
+                <span>Calculators</span>
+                <button class="collapse-btn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+        </div>
+        <ul class="submenu">
+            <li><a href="#"><i class="fa-solid fa-chevron-left"></i><span>Scientific Calculators</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-left"></i><span>Desktop Calculators</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-left"></i><span>Apps &amp; Software- Scientific
+                        Calculators</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-left"></i><span>Casio Calculator Journey</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-left"></i><span>Contents</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-left"></i><span>Support</span></a></li>
+        </ul>
+
+        <!-- Label Printers Section -->
+        <div class="menu-item">
+            <div class="menu-header">
+                <span>Label Printers &amp; Tapes</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay for background dimming -->
+    <div class="menu-overlay"></div>
+
+    <!-- Scripts -->
+    <script src="landingPage.js"></script>
+</body>
+
+</html>

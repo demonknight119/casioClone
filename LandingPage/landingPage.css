@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.basicNavbarDiv {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4F5F8;
+}
+
+
+.basicNavbarDiv-right-ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+
+}
+
+.basicNavbarDiv-right-ul li a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+
+}
+
+.basicNavbarDiv-right-ul li {
+    padding-right: 3rem;
+}
+
+
+
+.basicNavbarDiv-right-ul li a:hover {
+    text-decoration: underline;
+}
+
+/* main Navbar */
+
+.mainNavbarDiv-ul {
+    padding: 1rem 2rem;
+    /* Add horizontal padding */
+    width: 100%;
+    height: 70px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    /* Changed from space-around to space-between */
+    align-items: center;
+    background-color: white;
+    /* Changed from antiquewhite to match Casio's design */
+    box-sizing: border-box;
+    /* Ensures padding doesn't affect total width */
+}
+
+.mainNavbarDiv-middle-ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.mainNavbarDiv-middle-ul li a {
+    text-decoration: none;
+    color: #000;
+    /* Add color */
+    font-size: 0.9rem;
+    /* Add font size */
+    transition: opacity 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.mainNavbarDiv-middle-ul li a:hover {
+    opacity: 0.7;
+    /* Hover effect */
+}
+
+.mainNavbarDiv-right-button-ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    /* Center items vertically */
+    gap: 1rem;
+    /* Use gap instead of padding-right */
+}
+
+/* Hide middle nav when search is expanded */
+.mainNavbarDiv-middle-div.hidden {
+    display: none;
+}
+
+/* Style for the buttons */
+.favorite-button,
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Style for the search input */
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    /* Default width */
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Expanded state */
+.search-wrapper.expanded {
+    width: 600px;
+    /* 3x the default size */
+}
+
+#search-input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+    padding-left: 30px;
+    outline: none;
+    font-size: 16px;
+}
+
+.close-search {
+    position: absolute;
+    left: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: #333;
+    display: none;
+    /* Hidden by default */
+}
+
+.search-btn {
+    position: absolute;
+    right: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+/* menu - overlay */
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: #666666;
+    z-index: 999;
+    display: none;
+}
+
+/* Side Menu */
+.sideMenuDiv {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100%;
+    background-color: #FFFFFF;
+    z-index: 1000;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    transition: transform 0.5s ease;
+}
+
+.sideMenuDiv.active {
+    right: 0;
+}
+
+/* for the closee button */
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.close-menu:hover {
+    opacity: 1;
+}
+
+/* for menu item  and headers */
+.menu-item {
+    margin: 20px 0;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.menu-header span {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.collapse-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.collapse-btn:hover {
+    opacity: 1;
+}
+
+/* submenu */
+.submenu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin-left: 15px;
+}
+
+.submenu li {
+    margin-bottom: 10px;
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.submenu li a span:hover {
+    text-decoration: underline;
+}
