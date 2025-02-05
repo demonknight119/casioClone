@@ -1,2 +1,4 @@
 # casioClone
-clone of casio 
+
+clone of casio
+Day 1
