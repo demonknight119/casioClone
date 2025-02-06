@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   // Search elements
   const searchWrapper = document.querySelector(".search-wrapper");
   const searchInput = document.querySelector("#search-input");
@@ -13,21 +13,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const overlay = document.querySelector(".menu-overlay");
 
   // Search Functions
-  function expandSearch() {
+  const expandSearch = () => {
     searchWrapper.classList.add("expanded");
     closeSearchBtn.style.display = "block";
     middleNav.classList.add("hidden");
     searchInput.placeholder = "";
     searchInput.focus();
-  }
+  };
 
-  function collapseSearch() {
+  const collapseSearch = () => {
     searchWrapper.classList.remove("expanded");
     closeSearchBtn.style.display = "none";
     middleNav.classList.remove("hidden");
     searchInput.value = "";
     searchInput.blur();
-  }
+  };
 
   // Search Event Listeners
   searchBtn.addEventListener("click", expandSearch);
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
   closeSearchBtn.addEventListener("click", collapseSearch);
 
   // Close search when clicking outside
-  document.addEventListener("click", function (event) {
+  document.addEventListener("click", (event) => {
     const isClickInsideSearch = searchWrapper.contains(event.target);
     if (!isClickInsideSearch && searchWrapper.classList.contains("expanded")) {
       collapseSearch();
@@ -43,17 +43,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Side Menu Functions
-  function openMenu() {
+  const openMenu = () => {
     sideMenu.classList.add("active");
     overlay.style.display = "block";
     // document.body.style.overflow = "hidden"; // Prevent scrolling
-  }
+  };
 
-  function closeMenu() {
+  const closeMenu = () => {
     sideMenu.classList.remove("active");
     overlay.style.display = "none";
-    document.body.style.overflow = ""; // Restore scrolling
-  }
+    //document.body.style.overflow = ""; // Restore scrolling
+  };
 
   // Side Menu Event Listeners
   menuBtn.addEventListener("click", openMenu);
@@ -63,10 +63,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Submenu Toggle Functionality
   const collapseBtns = document.querySelectorAll(".collapse-btn");
   collapseBtns.forEach((btn) => {
-    btn.addEventListener("click", function () {
-      const menuItem = this.closest(".menu-item");
+    btn.addEventListener("click", () => {
+      const menuItem = btn.closest(".menu-item");
       const submenu = menuItem.nextElementSibling;
-      const icon = this.querySelector("i");
+      const icon = btn.querySelector("i");
 
       if (submenu && submenu.classList.contains("submenu")) {
         if (submenu.style.display === "block") {
@@ -84,8 +84,35 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Prevent search wrapper click from closing itself
-  searchWrapper.addEventListener("click", function (event) {
-    event.stopPropagation();
-  });
+  //adding carousel functionality
+  const carousel = document.querySelector(".carousel-slides");
+  const slides = document.querySelectorAll(".slide");
+  const prevButton = document.querySelector(".carousel-button.prev");
+  const nextButton = document.querySelector(".carousel-button.next");
+  let currentSlide = 0;
+
+  const slideCount = slides.length;
+
+  const updateSlide = () => {
+    carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+  };
+
+  const nextSlide = () => {
+    currentSlide++;
+    if (currentSlide >= slideCount - 1) {
+      currentSlide = 0;
+    }
+    updateSlide();
+  };
+
+  const prevSlide = () => {
+    currentSlide = currentSlide - 1;
+    if (currentSlide < 0) {
+      currentSlide = slideCount - 1;
+    }
+    updateSlide();
+  };
+
+  nextButton.addEventListener("click", nextSlide);
+  prevButton.addEventListener("click", prevSlide);
 });
