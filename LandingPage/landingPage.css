@@ -527,7 +527,8 @@ iframe {
 
 .view-all-new-drops button {
     padding: 12px 24px;
-    background: none;
+    color: white;
+    background: black;
     border: 2px solid #000;
     font-weight: bold;
     cursor: pointer;
@@ -535,8 +536,7 @@ iframe {
 }
 
 .view-all-new-drops button:hover {
-    background: #000;
-    color: white;
+    opacity: 0.8;
 }
 
 /* responsive */
