@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Get elements
   const slider = document.querySelector(".product-slider");
-  const progressBar = document.querySelector(".progress-bar");
+  const newDropsProgressBar = document.querySelector(".progress-bar");
   const prevBtn = document.querySelector(".nav-btn.prev");
   const nextBtn = document.querySelector(".nav-btn.next");
   const wishlistIcons = document.querySelectorAll(".wishlist-icon i");
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const updateProgress = () => {
     const scrollPercentage =
       (slider.scrollLeft / (slider.scrollWidth - slider.clientWidth)) * 100;
-    progressBar.style.width = `${scrollPercentage}%`;
+    newDropsProgressBar.style.width = `${scrollPercentage}%`;
   };
 
   // Scroll slider
@@ -158,4 +158,64 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   updateProgress();
+
+  const topicsContainer = document.querySelector(".topics-container");
+  const topicsPrevBtn = document.querySelector(".topics-nav-btn.prev");
+  const topicsNextBtn = document.querySelector(".topics-nav-btn.next");
+  const topicsProgressBar = document.querySelector(".topics-progress-bar");
+  const topicsScroll = (direction) => {
+    const scrollAmount = topicsContainer.clientWidth * 0.8;
+    topicsContainer.scrollBy({
+      left: direction === "next" ? scrollAmount : -scrollAmount,
+      behavior: "smooth",
+    });
+  };
+
+  // Update progress bar
+  const updateTopicsProgress = () => {
+    const scrollPercentage =
+      (topicsContainer.scrollLeft /
+        (topicsContainer.scrollWidth - topicsContainer.clientWidth)) *
+      100;
+    topicsProgressBar.style.width = `${scrollPercentage}%`;
+  };
+
+  topicsNextBtn.addEventListener("click", () => topicsScroll("next"));
+  topicsPrevBtn.addEventListener("click", () => topicsScroll("prev"));
+  topicsContainer.addEventListener("scroll", updateTopicsProgress);
+  updateTopicsProgress();
+
+  // Product Category Slider
+  const productContainer = document.querySelector(
+    ".product-category-container"
+  );
+  const productPrevBtn = document.querySelector(".products-nav-btn.prev");
+  const productNextBtn = document.querySelector(".products-nav-btn.next");
+  const productProgressBar = document.querySelector(
+    ".product-category-progress-bar"
+  );
+
+  const productScroll = (direction) => {
+    const scrollAmount = productContainer.clientWidth * 0.8;
+    productContainer.scrollBy({
+      left: direction === "next" ? scrollAmount : -scrollAmount,
+      behavior: "smooth",
+    });
+  };
+
+  // Update progress bar
+  const updateProductProgress = () => {
+    const scrollPercentage =
+      (productContainer.scrollLeft /
+        (productContainer.scrollWidth - productContainer.clientWidth)) *
+      100;
+    productProgressBar.style.width = `${scrollPercentage}%`;
+  };
+
+  productNextBtn.addEventListener("click", () => productScroll("next"));
+  productPrevBtn.addEventListener("click", () => productScroll("prev"));
+  productContainer.addEventListener("scroll", updateProductProgress);
+
+  // Initial progress
+  updateProductProgress();
 });
