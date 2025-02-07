@@ -115,4 +115,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
   nextButton.addEventListener("click", nextSlide);
   prevButton.addEventListener("click", prevSlide);
+
+  // Get elements
+  const slider = document.querySelector(".product-slider");
+  const progressBar = document.querySelector(".progress-bar");
+  const prevBtn = document.querySelector(".nav-btn.prev");
+  const nextBtn = document.querySelector(".nav-btn.next");
+  const wishlistIcons = document.querySelectorAll(".wishlist-icon i");
+
+  // Update progress bar
+  const updateProgress = () => {
+    const scrollPercentage =
+      (slider.scrollLeft / (slider.scrollWidth - slider.clientWidth)) * 100;
+    progressBar.style.width = `${scrollPercentage}%`;
+  };
+
+  // Scroll slider
+  const scroll = (direction) => {
+    const scrollAmount = slider.clientWidth * 0.8; // Scroll 80% of visible width
+    slider.scrollBy({
+      left: direction === "next" ? scrollAmount : -scrollAmount,
+      behavior: "smooth",
+    });
+  };
+
+  // Event Listeners
+  slider.addEventListener("scroll", updateProgress);
+  nextBtn.addEventListener("click", () => scroll("next"));
+  prevBtn.addEventListener("click", () => scroll("prev"));
+
+  // Wishlist toggle
+  wishlistIcons.forEach((icon) => {
+    icon.addEventListener("click", () => {
+      icon.classList.toggle("fa-solid");
+      icon.classList.toggle("fa-regular");
+
+      // Optional: Add heart animation
+      icon.style.transform = "scale(1.2)";
+      setTimeout(() => {
+        icon.style.transform = "scale(1)";
+      }, 200);
+    });
+  });
+  updateProgress();
 });
