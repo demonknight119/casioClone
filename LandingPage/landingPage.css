@@ -344,3 +344,378 @@ iframe {
     height: 400px;
     object-fit: cover;
 }
+
+/* image banners */
+.image-banners {
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-banners img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Product Section Styles */
+.product-section {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.product-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Slider Container */
+.product-slider-container {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: #f5f5f5;
+    border-color: #999;
+}
+
+.nav-btn.prev {
+    left: 10px;
+}
+
+.nav-btn.next {
+    right: 10px;
+}
+
+/* Product Slider */
+.product-slider {
+    display: flex;
+    gap: 24px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    padding: 20px 40px;
+}
+
+.product-slider::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+/* Product Cards */
+.product-card {
+    min-width: 300px;
+    position: relative;
+    padding: 20px;
+    background: white;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-tag {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.wishlist-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.wishlist-icon i {
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.wishlist-icon i:hover {
+    color: red;
+}
+
+.product-image {
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.1);
+}
+
+.product-info {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.product-info h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.model {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Progress Bar */
+.slider-progress {
+    height: 2px;
+    background: #eee;
+    margin: 20px 40px;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #000;
+    width: 0;
+    transition: transform 0.3s ease;
+}
+
+/* View All Button */
+.view-all-new-drops {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.view-all-new-drops button {
+    padding: 12px 24px;
+    background: none;
+    border: 2px solid #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.view-all-new-drops button:hover {
+    background: #000;
+    color: white;
+}
+
+/* responsive */
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .product-section {
+        padding: 30px 15px;
+    }
+
+    .product-card {
+        min-width: 250px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    /* Main Navbar */
+    .mainNavbarDiv-middle-ul {
+        display: none;
+        /* Hide middle menu on tablets */
+    }
+
+    .search-wrapper.expanded {
+        width: 300px;
+        /* Reduce search width */
+    }
+
+    /* Product Section */
+    .product-section h2 {
+        font-size: 28px;
+    }
+
+    .product-card {
+        min-width: 220px;
+        padding: 15px;
+    }
+
+    /* Carousel */
+    .carousel-conatianer {
+        height: 400px;
+    }
+
+    /* Promo Videos */
+    .promo-video-container {
+        flex-direction: column;
+    }
+
+    iframe {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Basic Navbar */
+    .basicNavbarDiv-right-ul li {
+        padding-right: 1.5rem;
+    }
+
+    /* Main Navbar */
+    .mainNavbarDiv-ul {
+        padding: 1rem;
+    }
+
+    .search-wrapper {
+        width: 150px;
+    }
+
+    /* Side Menu */
+    .sideMenuDiv {
+        width: 300px;
+        right: -300px;
+    }
+
+    /* Product Section */
+    .product-section {
+        padding: 20px 10px;
+    }
+
+    .product-card {
+        min-width: 200px;
+    }
+
+    .nav-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Carousel */
+    .carousel-conatianer {
+        height: 300px;
+    }
+
+    .carousel-button {
+        height: 40px;
+        width: 40px;
+        font-size: 1.5rem;
+    }
+
+    /* Promo Banner */
+    .promo-banner {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    /* Basic Navbar */
+    .basicNavbarDiv {
+        padding: 0.3rem;
+    }
+
+    .basicNavbarDiv-right-ul li {
+        padding-right: 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Main Navbar */
+    .mainNavbarDiv-ul {
+        padding: 0.5rem;
+        height: 60px;
+    }
+
+    .mainNavbarDiv-logo-div img {
+        width: 80px;
+        height: 16px;
+    }
+
+    /* Product Section */
+    .product-section h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .product-card {
+        min-width: 180px;
+        padding: 10px;
+    }
+
+    .product-tag {
+        font-size: 11px;
+    }
+
+    .product-info h3 {
+        font-size: 14px;
+    }
+
+    .model {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 13px;
+    }
+
+    /* View All Button */
+    .view-all-new-drops button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Carousel */
+    .carousel-conatianer {
+        height: 200px;
+    }
+
+    .carousel-button {
+        height: 30px;
+        width: 30px;
+        font-size: 1rem;
+    }
+
+    /* Promo Banner */
+    .promo-banner {
+        height: 300px;
+    }
+
+    /* Videos */
+    iframe {
+        height: 250px;
+    }
+}
