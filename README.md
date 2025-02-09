@@ -1,7 +1,7 @@
 Casio Clone
 🌍 Live Demo
 The webpage is deployed globally using Netlify. You can view it by clicking the link below:
-🔗 Casio Clone Live
+🔗 Casio Clone Live : https://67a8f393b3b13ef4a8033fdd--inquisitive-bienenstitch-fc1112.netlify.app/
 
 💻 Running Locally
 To run the project on your local machine:
