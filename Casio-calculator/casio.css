@@ -1,0 +1,451 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+   
+   
+}
+
+
+#top-nav{
+    background-color: #F4F5F8;
+    display: flex;
+    justify-content: end;
+    padding: 0.4rem;
+    
+
+}
+
+.top-nav{
+    margin-right: 2rem;
+    font-size:1rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.top-nav:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#nav-margin{
+    margin-right: 3rem;
+}
+
+#nav-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    padding: 0.6rem;    
+}
+
+.nav-inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-logo{
+       font-size: 2rem;
+       text-decoration: none;
+       font-weight: bold;
+       color: navy;
+      
+       padding: 0.5rem;
+}
+
+.nav-tag{
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1rem;
+    
+}
+
+#nav-tag{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.nav-tag:hover{
+    border-bottom: 3px solid black;
+}
+
+
+#nav-menu{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#nav-div-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#nav-div-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    
+}
+
+.nav-input{
+    background: transparent;
+    border: none;
+    outline:none;
+    color: #ccc;
+    padding: 5px;
+    width: 100%;
+    font-size: 16px;
+   
+
+}
+
+#nav-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+
+.hero-img{
+
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+#hero-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    
+}
+
+#hamburger {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Side Menu */
+#side-menu {
+    position: fixed;
+    top: 0;
+    right: -280px;  /* Initially hidden */
+    width: 280px;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: 0.3s ease-in-out;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000; 
+}
+
+#side-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+#side-menu a:hover {
+    background-color: #333;
+}
+
+/* Close button */
+#close-menu {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* Show menu when open */
+#side-menu.open {
+    right: 0;
+}
+
+/* Overlay */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+/* Show overlay when menu opens */
+#overlay.active {
+    display: block;
+}
+
+
+/* slider */
+
+
+
+/* Slider Styles */
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.Slider {
+    width: 100%;
+    display: none; /* Hide images by default */
+}
+
+
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* links */
+
+#main-anchor{
+    padding: 4rem 2rem 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#main-heading{
+    font-size: 2rem;
+    font-weight:1000;
+
+}
+
+#main-links{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1rem;
+}
+
+.main-links{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* main-contain */
+
+
+
+
+.calculator-store {
+    max-width: 100%;
+   min-height:  100vh; /* Full-screen height */
+    padding: 1rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Categories Section (Now Horizontal) */
+.calculator-store  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.categories{
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.category:hover{
+    border-bottom: 3px solid black;
+}
+
+/* Grid Layout */
+.calculator-store .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    flex-grow: 1;
+}
+
+/* Fixed Size Cards */
+.calculator-store .card {
+    width: 250px; /* Fixed card width */
+    height: 350px; /* Fixed card height */
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    text-align: center;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Image */
+.calculator-store .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.3rem;
+}
+
+
+.filters{
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#type{
+font-weight: bold;
+}
+
+#currency{
+    color:#007185;
+    font-weight: 600;
+    font-size: 0.7rem;
+   margin-right: 50%;
+}
+
+#clear-calculator-filters{
+    padding: 0.7rem;
+    background-color: white;
+    border: 0.5px solid lightgray;
+}
+
+
+/* footer */
+
+
+
+
+#footer-div{
+    width: 100%;
+    margin-top: 2rem;
+    background-color: #F7F8FA;
+    
+    
+}
+
+#footer-tag{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+.footer-tag{
+    text-decoration: none;
+    color:black;
+}
+
+.f-logo{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    color:black;
+}
+
+.footer-info{
+    color: black;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: small;
+}
+
+.fotter-copyright{
+color: black;
+margin-left: 1.5rem;
+font-size: smaller;
+}
+
+#fotter-copyright ,#footer-info ,#f-logo{
+    margin-left: 1rem;
+}
+
+#f-logo{
+  margin-bottom: 1rem;  
+}
+
+
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .calculator-store .grid {
+        grid-template-columns: repeat(3, 1fr); /* Max 3 cards per row */
+    }
+}
+
+@media (max-width: 900px) {
+    .calculator-store .grid {
+        grid-template-columns: repeat(2, 1fr); /* Max 2 cards per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .calculator-store .grid {
+        grid-template-columns: 1fr; /* Single column layout */
+
+    }
+     .card{
+        height: 250px;
+        width: 150px;
+    }
+}
