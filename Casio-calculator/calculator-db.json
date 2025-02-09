@@ -1,0 +1,136 @@
+{
+    "calculator" : [
+      {
+        "variant" : " Natural textbook display",                                              
+        "image" : "https://www.casio.com/content/dam/casio/product-info/locales/in/en/calc/product/scientific/F/FX/FX9/fx-991ESPLUS-2/assets/fx-991ES_PLUS-2_F.png.transform/product-panel/image.png",
+        "title" : "fx-991ES PLUS-2",
+        "type"  : "Standard Scientific Calculators",
+        "currency" : "MPR",
+        "price" : "₹ 1,395 (incl. of all taxes)"
+      },
+      {
+        "variant" : "Top Model",
+        "image" : "https://www.casio.com/content/dam/casio/product-info/locales/in/en/calc/product/scientific/F/FX/FX9/fx-991cw/assets/fx-991CW_F.png.transform/product-panel/image.png",
+        "title" : "fx-991CW",
+        "type"  : "Standard Scientific Calculators",
+        "currency" : "MPR",
+        "price" : "₹ 1,595 (incl. of all taxes)"
+      },
+      {
+        "variant" : "Solar & Battery",
+        "image" : "https://www.casio.com/content/dam/casio/product-info/locales/in/en/calc/product/scientific/F/FC/FC2/fc-200v-2/assets/FC-200V-2_F.png.transform/product-panel/image.png",
+        "title" : "FC-200V-2",
+        "type"  : "Financial Calculators",
+        "currency" : "MPR",
+        "price" : "₹ 2,995 (incl. of all taxes)"
+      },
+      {
+        "variant" : "Solar & Battery",
+        "image" : "https://www.casio.com/content/dam/casio/product-info/locales/in/en/calc/product/scientific/F/FC/FC2/FC-200V/assets/FC200V_Seq1.jpg.transform/product-panel/image.jpg",
+        "title" : "FC-200V",
+        "type"  : "Financial Calculators",
+        "currency" : "MPR",
+        "price" : "₹ 2,695 (incl. of all taxes)"
+      },
+      {
+        "variant" : "Python",
+        "image" : "https://www.casio.com/content/dam/casio/product-info/locales/in/en/calc/product/scientific/F/FX/FX9/fx-9860GIII/assets/fx-9860GIII_Seq1.jpg.transform/product-panel/image.jpg",
+        "title" : "fx-9860GIII",
+        "type"  : "Graphing Calculators",
+        "currency" : "MPR",
+        "price" : "₹ 8,495 (incl. of all taxes)"
+      },
+      {
+        "variant" : "3D graph / Color display",
+        "image" : "https://www.casio.com/content/dam/casio/product-info/locales/in/en/calc/product/scientific/F/FX/FXC/fx-CG50/assets/fx-CG50_Seq1.jpg.transform/product-panel/image.jpg",
+        "title" : "fx-CG50",
+        "type"  : "Graphing Calculators",
+        "currency" : "MPR",
+        "price" : "₹ 13,995 (incl. of all taxes)"
+      },
+      {
+        "variant" : "Natural textbook display",
+        "image" : "https://www.casio.com/content/dam/casio/product-info/locales/in/en/calc/product/scientific/F/FX/FX5/fx-5800P/assets/fx-5800P_Seq1.jpg.transform/product-panel/image.jpg",
+        "title" : "fx-5800P",
+        "type"  : "Programmable Calculators",
+        "currency" : "MPR",
+        "price" : "₹ 5,295 (incl. of all taxes)"
+      },
+      {
+        "variant" : "2-line display",
+        "image" : "https://www.casio.com/content/dam/casio/product-info/locales/in/en/calc/product/scientific/F/FX/FX1/fx-100MS-2/assets/fx-100MS-2_Seq1.jpg.transform/product-panel/image.jpg",
+        "title" : "fx-100MS-2",
+        "type"  : "Standard Scientific Calculators",
+        "currency" : "MPR",
+        "price" : "₹ 1,045 (incl. of all taxes)"
+      },
+      {
+        "variant" : "2-line display",
+        "image" : "https://www.casio.com/content/dam/casio/product-info/locales/in/en/calc/product/scientific/F/FX/FX3/fx-350MS-2/assets/fx-350MS-2_Seq1.jpg.transform/product-panel/image.jpg",
+        "title" : "fx-350MS-2",
+        "type"  : "Standard Scientific Calculators",
+        "currency" : "MPR",
+        "price" : "₹ 660 (incl. of all taxes)"
+      },
+      {
+        "variant" : "Natural textbook display",
+        "image" : "https://www.casio.com/content/dam/casio/product-info/locales/in/en/calc/product/scientific/F/FX/FX8/fx-82ESPLUS-2/assets/fx-82ES_PLUS-2_F.png.transform/product-panel/image.png",
+        "title" : "fx-82ES PLUS-2",
+        "type"  : "Standard Scientific Calculators",
+        "currency" : "MPR",
+        "price" : "₹ 745 (incl. of all taxes)"
+      },
+      {
+        "variant" : "Natural textbook display",
+        "image" : "https://www.casio.com/content/dam/casio/product-info/locales/in/en/calc/product/scientific/F/FX/FX8/fx-82esplus-2bu/assets/fx-82ES_PLUS-2BU_F.png.transform/product-panel/image.png",
+        "title" : "fx-82ES PLUS-2BU",
+        "type"  : "Standard Scientific Calculators",
+        "currency" : "MPR",
+        "price" : "₹ 845 (incl. of all taxes)"
+      },
+      {
+        "variant" : "Natural textbook display",
+        "image" : "https://www.casio.com/content/dam/casio/product-info/locales/in/en/calc/product/scientific/F/FX/FX8/fx-82esplus-2pk/assets/fx-82ES_PLUS-2PK_F.png.transform/product-panel/image.png",
+        "title" : "fx-82ES PLUS-2PK",
+        "type"  : "Standard Scientific Calculators",
+        "currency" : "MPR",
+        "price" : "₹ 780 (incl. of all taxes)"
+      },
+      {
+        "variant" : "2-line display",
+        "image" : "https://www.casio.com/content/dam/casio/product-info/locales/in/en/calc/product/scientific/F/FX/FX8/fx-82MS-2/assets/fx-82MS-2_Seq1.jpg.transform/product-panel/image.jpg",
+        "title" : "fx-82MS-2",
+        "type"  : "Standard Scientific Calculators",
+        "currency" : "MPR",
+        "price" : "₹ 625 (incl. of all taxes)"
+      },
+      {
+        "variant" : "Natural textbook display",
+        "image" : "https://www.casio.com/content/dam/casio/product-info/locales/in/en/calc/product/scientific/F/FX/FX9/fx-991esplus-2bu/assets/fx-991ES_PLUS-2BU_F.png.transform/product-panel/image.png",
+        "title" : "fx-991ES PLUS-2BU",
+        "type"  : "Standard Scientific Calculators",
+        "currency" : "MPR",
+        "price" : "₹ 1,395 (incl. of all taxes)"
+      },
+      {
+        "variant" : "Natural textbook display",
+        "image" : "https://www.casio.com/content/dam/casio/product-info/locales/in/en/calc/product/scientific/F/FX/FX9/fx-991esplus-2pk/assets/fx-991ES_PLUS-2PK_F.png.transform/product-panel/image.png",
+        "title" : "fx-991ES PLUS-2PK",
+        "type"  : "Standard Scientific Calculators",
+        "currency" : "MPR",
+        "price" : "₹ 1,395 (incl. of all taxes)"
+      },
+      {
+        "variant" : "2-line display",
+        "image" : "https://www.casio.com/content/dam/casio/product-info/locales/in/en/calc/product/scientific/F/FX/FX9/fx-991MS-2/assets/fx-991MS-2_Seq1.jpg.transform/product-panel/image.jpg",
+        "title" : "fx-991MS-2",
+        "type"  : "Standard Scientific Calculators",
+        "currency" : "MPR",
+        "price" : "₹ 1,245 (incl. of all taxes)"
+      }
+    ]
+}
+
+
+
+
