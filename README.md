@@ -23,8 +23,8 @@ The **Casio Clone** project is a front-end web application designed to mimic the
 │── 📂 Casio-calculator/        # Casio calculator webpage
 │── 📂 G-SHOCK x J Balvin/      # G-SHOCK collaboration with J Balvin
 │── 📂 Gshock-webpage/          # Main G-SHOCK product page
-│── 📂 LandingPage/             # Homepage of the website
 │── 📂 unstoppableme/           # Campaign section (Unstoppable Me)
+│── 📂 LandingPage/             # Homepage of the website
 │── 📜 index.html               # Main entry file
 │── 📜 style.css                # Global styles
 │── 📜 script.js                # JavaScript functionality
